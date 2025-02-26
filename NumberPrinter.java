@@ -12,4 +12,13 @@ class NumberPrinter {
         System.out.println();
     }
 
+    public void printXtoY(int x, int y) {
+        System.out.println("Printing " + y + " numbers starting from " + x);
+        printFromAtoB(x, x + y - 1);
+    }
+
+    public void printFromStrings(String str1, String str2) {
+
+    }
+
 }
