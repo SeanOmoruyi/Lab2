@@ -18,6 +18,14 @@ class NumberPrinter {
     }
 
     public void printFromStrings(String str1, String str2) {
+        try {
+            int a = Integer.parseInt(str1);
+            int b = Integer.parseInt(str2);
+            System.out.println("Printing from " + a + " to " + b);
+            printFromAtoB(a, b);
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Invalid input! Please enter valid integers.");
+        }
 
     }
 
