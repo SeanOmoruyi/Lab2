@@ -1,3 +1,5 @@
+import java.util.Random;
+
 class NumberPrinter {
 
     private void printFromAtoB(int a, int b) {
@@ -27,6 +29,14 @@ class NumberPrinter {
             System.out.println("Error: Invalid input! Please enter valid integers.");
         }
 
+    }
+
+    public void printRandomNumbers() {
+        Random rand = new Random();
+        int num1 = rand.nextInt(50);
+        int num2 = rand.nextInt(50);
+        System.out.println("Printing from randomly generated numbers: " + num1 + " to " + num2);
+        printFromAtoB(num1, num2);
     }
 
 }
